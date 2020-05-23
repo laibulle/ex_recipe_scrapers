@@ -16,7 +16,7 @@ end
 ```
 
 ```elixir
-RecipeScraper.fetch("https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers/")
+RecipeScrapers.fetch("https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers/")
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)

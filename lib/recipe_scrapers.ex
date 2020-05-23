@@ -10,7 +10,7 @@ defmodule RecipeScrapers do
     {res, _} =
       System.cmd(
         @base_dir <> "/.venv/bin/python3",
-        ["scrappers.py", url],
+        ["scrapers.py", url],
         cd: @base_dir
       )
 
