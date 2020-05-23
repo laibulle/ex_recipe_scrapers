@@ -10,9 +10,13 @@ by adding `recipe_scrapers` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:recipes_scrapers, "~> 0.1.0"}
+    {:recipe_screapers, git: "https://github.com/laibulle/ex_recipe_scrapers.git", branch: "master"},
   ]
 end
+```
+
+```elixir
+RecipeScraper.fetch("https://www.allrecipes.com/recipe/158968/spinach-and-feta-turkey-burgers/")
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
