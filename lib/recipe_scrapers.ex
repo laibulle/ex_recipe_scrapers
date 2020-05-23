@@ -6,8 +6,8 @@ defmodule RecipeScrapers do
 
   def base_path() do
     case Process.whereis(Mix.State) do
-      nil -> :code.priv_dir("recipe_scrapers") |> Path.join(priv_dir)
-      _ -> Application.app_dir("priv/recipe_scrapers", priv_dir)
+      nil -> :code.priv_dir(:recipe_scrapers) |> Path.join("recipe_scrapers")
+      _ -> Application.app_dir(:recipe_scrapers, "priv/recipe_scrapers")
     end
   end
 
