@@ -7,7 +7,7 @@ scraper = scrape_me(sys.argv[1])
 
 print(json.dumps(
     {
-        "name": scraper.title(),
+        "title": scraper.title(),
         "steps": scraper.instructions(),
         "image": scraper.image(),
         "ingredients": scraper.ingredients(),
