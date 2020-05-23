@@ -1,7 +1,7 @@
 defmodule RecipeScrapers do
   defmodule Recipe do
     @derive [Poison.Encoder]
-    defstruct [:name, :steps, :yields, :total_time, :ingredients, :image]
+    defstruct [:title, :steps, :yields, :total_time, :ingredients, :image]
   end
 
   def base_path() do
