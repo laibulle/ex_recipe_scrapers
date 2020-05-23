@@ -8,7 +8,7 @@ scraper = scrape_me(sys.argv[1])
 print(json.dumps(
     {
         "title": scraper.title(),
-        "steps": scraper.instructions(),
+        "steps": scraper.instructions().split('\n'),
         "image": scraper.image(),
         "ingredients": scraper.ingredients(),
         "total_time": scraper.total_time(),
