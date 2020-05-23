@@ -10,7 +10,7 @@ by adding `recipe_scrapers` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:recipe_screapers, git: "https://github.com/laibulle/ex_recipe_scrapers.git", branch: "master"},
+    {:recipe_scrapers, git: "https://github.com/laibulle/ex_recipe_scrapers.git", branch: "master"},
   ]
 end
 ```
